@@ -8,5 +8,5 @@ app.get('/', (request, response)=>{
 })
 
 app.listen(PORT, ()=>{
-	console.log(`The server is running on port ${PORT})
+	console.log(`The server is running on port ${PORT}`)
 })

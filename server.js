@@ -4,9 +4,9 @@ const PORT = 8000
 
 const rappers = {
 	'21 Savage': {
-	"age": 32,
-	"birthName": "Yada Yada",
-	"birthLocation": "London, England"
+		"age": 32,
+		"birthName": "Yada Yada",
+		"birthLocation": "London, England"
 	},
 	'Chance the Rapper': {
 		'age': 32,
@@ -24,8 +24,9 @@ app.get('/', (request, response)=>{
 		response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api', (request, response)=>{
-	response.json(rappers)
+app.get('/api/:name', (request, response)=>{
+	const rapperName = request.params.name
+	response.json(rappers[rapperName])
 })
 
 app.listen(PORT, ()=>{

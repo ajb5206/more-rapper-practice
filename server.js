@@ -3,17 +3,17 @@ const app = express()
 const PORT = 8000
 
 const rappers = {
-	'21 Savage': {
+	'21 savage': {
 		"age": 32,
 		"birthName": "Yada Yada",
 		"birthLocation": "London, England"
 	},
-	'Chance the Rapper': {
+	'chance the rapper': {
 		'age': 32,
 		'birthName': "Chancelor Bennett",
 		'birthLocation': 'Chicago, Illinois'
 	},
-	'Unknown':{
+	'unknown':{
 		'age': 0,
 		'birthName': 'unknown',
 		'birthLocation': 'unknown'
@@ -25,7 +25,7 @@ app.get('/', (request, response)=>{
 })
 
 app.get('/api/:name', (request, response)=>{
-	const rapperName = request.params.name
+	const rapperName = request.params.name.toLowerCase()
 	response.json(rappers[rapperName])
 })
 

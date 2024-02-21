@@ -2,10 +2,22 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 
-const savage = {
+const rappers = {
+	'21 Savage': {
 	"age": 32,
 	"birthName": "Yada Yada",
 	"birthLocation": "London, England"
+	},
+	'Chance the Rapper': {
+		'age': 32,
+		'birthName': "Chancelor Bennett",
+		'birthLocation': 'Chicago, Illinois'
+	},
+	'Unknown':{
+		'age': 0,
+		'birthName': 'unknown',
+		'birthLocation': 'unknown'
+	}
 }
 
 app.get('/', (request, response)=>{

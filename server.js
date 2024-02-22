@@ -13,6 +13,21 @@ const rappers = {
 		'birthName': "Chancelor Bennett",
 		'birthLocation': 'Chicago, Illinois'
 	},
+	'eminem': {
+		'age': 51,
+		'birthName': "Marshall Mathers",
+		'birthLocation': 'Detroit, Michigan'
+	},
+	'ludacris': {
+		'age': 46,
+		'birthName': "Christopher Bridges",
+		'birthLocation': 'Champaign, Illinois'
+	},
+	'nas': {
+		'age': 32,
+		'birthName': "Nasir bin Olu Dara Jones",
+		'birthLocation': 'New York City, New York'
+	},
 	'unknown':{
 		'age': 0,
 		'birthName': 'unknown',
